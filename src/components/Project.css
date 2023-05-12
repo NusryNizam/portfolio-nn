@@ -1,0 +1,87 @@
+.project {
+    border-top: 3px solid rgb(255 255 255 / 40%);
+    border-radius: 1em 1em 0 0;
+    /* margin-top: 100vh; */
+    z-index: 2;
+    position: sticky;
+    top: 0;
+
+    /* demo */
+    min-height: calc(100vh);
+
+}
+
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    height: calc(100vh);
+    min-height: 100dvh;
+    /* padding-block: 4em; */
+    /* background-image: url('/public/bg-decoration.svg'); */
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-blend-mode: overlay;
+}
+
+.left {
+    padding-left: 1em;
+}
+
+.project-title {
+    font-family: 'DM Sans';
+    font-weight: bold;
+    font-size: 2.5em;
+    margin-bottom: 0.2rem;
+}
+
+.project-description {
+    font-family: 'DM Sans';
+    /* font-weight: bold; */
+    font-size: 1.125em;
+    max-width: 17em;
+    margin-bottom: 1.2rem;
+}
+
+.button {
+    display: block;
+    font-family: 'DM Sans';
+    background-color: white;
+    border-radius: 1.5em;
+    font-size: 1em;
+    padding: 0.6em 1em;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    min-width: 8em;
+}
+
+.button:hover, .button:focus-within {
+    scale: 1.02;
+}
+
+.main-button {
+    background-color: #F3FF6A;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%),
+    inset 0px 4px 4px rgb(253 250 225 / 40%),
+    inset 0px 12px 14px rgb(250 254 201/ 40%);
+    margin-bottom: 0.5em;
+}
+
+.secondary-button {
+    /* background-color:rgb(255 255 255 / 10%); */
+    color: white;
+}
+
+.cover-wrapper {
+    padding-block: 2em;
+}
+
+.cover-wrapper img {
+    text-align: right;
+    margin-left: auto;
+    width: 90%;
+}
