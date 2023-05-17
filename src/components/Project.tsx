@@ -1,3 +1,4 @@
+import { forwardRef, ForwardRefExoticComponent, RefAttributes } from "react";
 import "./Project.css";
 
 type ProjectProps = {
@@ -7,16 +8,13 @@ type ProjectProps = {
   fontColor: string,
   title: string,
   description: string,
-  theme: 'light' | 'dark'
+  theme: 'light' | 'dark',
 };
-const Project: React.FC<ProjectProps> = (props) => {
-  const color = props.color;
-  const cover = props.cover;
-  const decorationImg = props.decorationImg;
-  const fontColor = props.fontColor;
+const Project: ForwardRefExoticComponent<ProjectProps & RefAttributes<HTMLDivElement>> = forwardRef<HTMLDivElement, ProjectProps>((props, ref) => {  
+  const { color, cover, decorationImg, fontColor } = props;
 
   return (
-    <section className="project" style={{ backgroundColor: color, color: fontColor}}>
+    <section ref={ref} className="project" style={{ backgroundColor: color, color: fontColor}}>
       <div className="two-column-layout" style={{backgroundImage: `url("${decorationImg}"`}}>
         <div className="left">
           <h1 className="project-title">{props.title}</h1>
@@ -34,6 +32,6 @@ const Project: React.FC<ProjectProps> = (props) => {
       </div>
     </section>
   );
-};
+});
 
 export default Project;
