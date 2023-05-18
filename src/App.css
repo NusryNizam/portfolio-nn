@@ -21,7 +21,7 @@
 .main-container {
   position: sticky;
   top: 0;
-  z-index: -1;
+  /* z-index: -1; */
   /* height: 100vh; */
   background-position: top;
   background-repeat: no-repeat;
@@ -50,15 +50,25 @@
 .profile {
   max-width: 160px;
 }
-
-.heading-1 {
-  font-size: 56px;
-  color: #ebebeb;
-}
-
 .title {
   font-family: 'DM Sans';
   font-weight: 300;
   font-size: 28px;
   color: #cecece;
+  margin-bottom: 1rem;
+}
+
+.socials {
+  display: flex;
+  max-width: 160px;
+}
+
+.icon {
+  height: 32px;
+}
+
+.socials a:hover {
+  filter: brightness(120%);
+  scale: 1.04;
+  transition: 100ms ease-in;
 }

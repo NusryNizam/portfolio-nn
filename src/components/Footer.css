@@ -1,6 +1,27 @@
 footer {
-    z-index: 2;
+    z-index: 5;
     background-color: #252525;
     color: #ededed;
     position: relative;
+    height: 50dvh;
+    padding: 2rem;
+}
+
+.contact {
+    font-size: 1.1rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.to-top {
+    /* margin-top: auto; */
+    position: absolute;
+    bottom: 2rem;
+    text-decoration: underline;
+    color: var(--secondary-text-color)
 }
