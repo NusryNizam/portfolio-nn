@@ -1,6 +1,6 @@
 footer {
     z-index: 5;
-    background-color: #252525;
+    background-color: var(--footer-bg-color);
     color: #ededed;
     position: relative;
     height: 50dvh;

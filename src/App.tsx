@@ -1,6 +1,6 @@
 import "./App.css";
 import bgImage from "./assets/bg-crop.svg";
-import profileImage from "./assets/profile.svg";
+import profileImage from "./assets/profile.webp";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -149,21 +149,21 @@ function App() {
       <div className="main-container" ref={mainRef} style={{backgroundImage: `url("${bgImage}")`}}>
         <section className="main">
           <div className="content">
-            <img className="profile" src={profileImage} alt="" />
+            <img className="profile" src={profileImage} alt="Profile picture" />
             <h1 className="heading-1">Nusry Nizam</h1>
-            <h3 className="title">UI Designer & Developer</h3>
+            <div className="title">UI Designer & Developer</div>
             <div className="socials">
-              <a href="https://github.com/NusryNizam" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/NusryNizam" target="_blank" rel="noopener noreferrer" aria-label="Go to Github profile">
                 <svg className="icon">
                   <use xlinkHref="#github"></use>
                 </svg>
               </a>
-              <a href="https://dribbble.com/nusry" target="_blank" rel="noopener noreferrer">
+              <a href="https://dribbble.com/nusry" target="_blank" rel="noopener noreferrer" aria-label="Go to Dribbble profile">
                 <svg className="icon">
                   <use xlinkHref="#dribbble"></use>
                 </svg>
               </a>
-              <a href="https://linkedin.com/in/nusrynizam" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/nusrynizam" target="_blank" rel="noopener noreferrer" aria-label="Go to LinkedIn profile">
                 <svg className="icon">
                   <use xlinkHref="#linkedin"></use>
                 </svg>
