@@ -49,6 +49,7 @@
 
 .profile {
   max-width: 160px;
+  border-radius: 4rem;
 }
 .title {
   font-family: 'DM Sans';

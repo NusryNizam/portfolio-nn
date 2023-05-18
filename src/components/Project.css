@@ -29,6 +29,10 @@
     padding-left: 1em;
 }
 
+.right {
+    margin-left: auto;
+}
+
 .project-title {
     font-family: 'DM Sans';
     font-weight: bold;
