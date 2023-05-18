@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+
 import "./Footer.css";
 
 interface FooterProps {}
@@ -12,8 +13,10 @@ const Footer: FunctionComponent<FooterProps> = () => {
           <span>Email: </span>
           <a href="mailto:nusry@proton.me?subject=Inquiry">nusry@proton.me</a>
         </div>
-        
-        <a className="to-top" href="#app" aria-label="Go back to top">↑ Back to top</a>
+
+        <a className="to-top" href="#app" aria-label="Go back to top">
+          ↑ Back to top
+        </a>
       </div>
     </footer>
   );
