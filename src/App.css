@@ -22,7 +22,8 @@
 }
 
 .profile {
-  max-width: 160px;
+  width: 160px;
+  aspect-ratio: 1;
   border-radius: 4rem;
 }
 .title {
