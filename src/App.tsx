@@ -111,7 +111,9 @@ function App() {
       >
         <section className="main">
           <div className="content">
-            <img fetchPriority="high" className="profile" src={profileImage} alt="Profile picture" />
+            <div className="img-container">
+            <img className="profile" src={profileImage} alt="Profile picture" />
+            </div>
             <h1 className="heading-1">Nusry Nizam</h1>
             <div className="title">UI Designer & Developer</div>
             <div className="socials">
