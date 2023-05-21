@@ -23,3 +23,14 @@ footer {
   text-decoration: underline;
   color: var(--secondary-text-color);
 }
+
+.email {
+  color: rgb(255, 128, 31);
+  font-weight: bold;
+  text-underline-offset: 4px;
+}
+
+.email:active {
+  background-color: rgb(189, 98, 28);
+  color: white;
+}

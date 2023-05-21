@@ -11,7 +11,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
         <h2 className="heading-2">Get in touch</h2>
         <div className="contact">
           <span>Email: </span>
-          <a href="mailto:nusry@proton.me?subject=Inquiry">nusry@proton.me</a>
+          <a className='email' href="mailto:nusry@proton.me?subject=Inquiry">nusry@proton.me</a>
         </div>
 
         <a className="to-top" href="#app" aria-label="Go back to top">
